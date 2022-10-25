@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import SignupPage from "@/Pages/SignupPage.vue";
 import CreateCategory from "@/Pages/categories/CreateCategory.vue";
+import CreateItem from "@/Pages/items/CreateItem.vue";
 import { Actions } from "@/store/enums/StoreEnums";
 import JwtService from "@/services/JwtService";
 import store from "@/store";
@@ -23,6 +24,11 @@ const router = createRouter({
       path: "/categories/create",
       name: "create-category",
       component: CreateCategory,
+    },
+    {
+      path: "/items/create",
+      name: "create-item",
+      component: CreateItem,
     },
     {
       path: "/about",
